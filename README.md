@@ -110,7 +110,8 @@ Here is the basic structure with stub or empty files in place.
 │   │   └── style.css
 │   ├── img
 │   ├── js
-│   │   └── project.js
+│   │   ├── project.js
+│   │   └── sketch.js
 │   └── index.html
 ├── experiment2
 │   ├── css
