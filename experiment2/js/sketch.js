@@ -12,6 +12,7 @@ const VALUE2 = 2;
 
 // Globals
 let myInstance;
+let canvasContainer;
 
 class MyClass {
     constructor(param1, param2) {
@@ -27,7 +28,7 @@ class MyClass {
 // setup() function is called once when the program starts
 function setup() {
     // place our canvas, making it fit our container
-    let canvasContainer = $("#canvas-container");
+    canvasContainer = $("#canvas-container");
     let canvas = createCanvas(canvasContainer.width(), canvasContainer.height());
     canvas.parent("canvas-container");
     // resize canvas is the page is resized
@@ -37,13 +38,27 @@ function setup() {
     });
     // create an instance of the class
     myInstance = new MyClass(VALUE1, VALUE2);
+
+    var centerHorz = windowWidth / 2;
+    var centerVert = windowHeight / 2;
 }
 
 // draw() function is called repeatedly, it's the main animation loop
 function draw() {
-    background(220);
+    background(220);    
     // call a method on the instance
     myInstance.myMethod();
+
+    // Put drawings here
+    var centerHorz = canvasContainer.width() / 2 - 125;
+    var centerVert = canvasContainer.height() / 2 - 125;
+    fill(234, 31, 81);
+    noStroke();
+    rect(centerHorz, centerVert, 250, 250);
+    fill(255);
+    textStyle(BOLD);
+    textSize(140);
+    text("p5*", centerHorz + 10, centerVert + 200);
 }
 
 // mousePressed() function is called once after every time a mouse button is pressed
