@@ -6,7 +6,7 @@ h1, h2 {
 }
 
 #content {
-  width: 100%;
+  width: calc(100% - 30px);
   margin: 10px;080;
   padding: 10px;
   border: solid 1px #808;
