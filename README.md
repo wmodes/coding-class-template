@@ -1,4 +1,4 @@
-# Creative Coding Template
+# Coding Template
 File template for creative coding, with focus on p5.js.
 
 ## Imitate, Integrate, Innovate
