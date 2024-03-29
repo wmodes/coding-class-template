@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>MyName's Homepage</title>
+	<title>Portfolio of My Name</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   <meta charset="UTF-8" />
@@ -18,14 +18,24 @@
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
 	<main id="content">
-		<section>
-			<h1>MyName's Homepage</h1>
+        <h1>Portfolio of My Name</h1>
+		<section class="two-column">
 			<div class="minor-section">
 					<!-- Note that all filenames use lowercase and no spaces -->
-					<img class="cat-photo" src="./img/cute-grey-kitten.jpg">
+                    <div class="image-wrapper">
+                        <img class="cat-photo" src="./img/cute-grey-kitten.jpg">
+                    </div>
 					<h2>About Me</h2>
 					<p>Tell us about yourself. Add photos. Customize this. Go crazy.</p>
 			</div>
+            <div class="minor-section">
+                <h2>Links to Experiments</h2>
+                <ul>
+                    <li><a href="./experiment1/index.html">Experiment 1</a></li>
+                    <li><a href="./experiment2/index.html">Experiment 2</a></li>
+                    <li><a href="./experiment3/index.html">Experiment 3</a></li>
+                </ul>
+            </div>
 
 		</section>
 		<nav id="links">
