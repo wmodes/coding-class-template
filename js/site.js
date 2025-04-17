@@ -16,7 +16,7 @@ $(document).ready(function() {
     // return results;
   }
 
-  $('#fullscreen').click(function() {
+  $('#toggle-fullscreen').click(function() {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen().catch((e) => {
         console.error(e);
@@ -33,9 +33,11 @@ $(document).ready(function() {
     if (document.fullscreenElement) {
       console.log("Entered fullscreen mode");
       $('body').addClass('is-fullscreen');
+      resizeScreen();
     } else {
       console.log("Exited fullscreen mode");
       $('body').removeClass('is-fullscreen');
+      resizeScreen();
     }
   });
 
